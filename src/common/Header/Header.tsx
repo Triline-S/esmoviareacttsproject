@@ -66,7 +66,6 @@ function Header() {
           </div>
         </>
       )}
-      <div onClick={() => {SetAuth("favorites", [])}}>Debug clear favorites</div>
       </Stack>
     </div>
   );

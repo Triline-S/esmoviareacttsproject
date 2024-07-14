@@ -42,22 +42,21 @@ function Profile () {
 
     return (
         <>
-        <h1>
+        <h1 className="text-3xl pt-8 pb-8 mb-4 md:pl-80 md:bg-slate-300 rounded-br-lg rounded-bl-lg w-fit pr-2 shadow-md">
             {decodedName}'s favorites
         </h1>
         {favorites.length > 0 ? (
-            <Container>
+            <div className="md:ml-72">
                 {favorites.map((fav: FavMovie, index: number) => {
-                    console.log("Movie where?");
                   return (
                     <Row key={index}>
-                      <div /*onClick={() => selectMovie(fav)}*/>
+                      <div className={` ml-2 w-fit bg-slate-${index%2 + 3}00`}>
                         {fav.addedBy === decodedName ? (fav.movie):("")}
                       </div>
                     </Row>
                   );
                 })}
-            </Container>
+            </div>
           ) : (
             <div>No favorites yet!</div>
           )}

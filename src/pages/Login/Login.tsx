@@ -59,14 +59,14 @@ function Login() {
   // }, [credentials])
 
   return (
-    <div className="p-10">
+    <div className="p-10 flex flex-col">
       <CInput
         type="text"
         name="name"
         placeholder=""
         design={`${
-          credentialsErrors.nameError !== "" ? "border-solid border-1 border-red-700" : ""
-        } border-solid border-1 border-black`}
+          credentialsErrors.nameError !== "" ? "border-solid border-2 border-black w-40" : ""
+        } border-solid border-1 border-black w-40`}
         emitFunction={inputHandler}
         errorCheck={errorCheck}
       /> <br />
@@ -77,8 +77,8 @@ function Login() {
         name="password"
         placeholder=""
         design={`${
-          credentialsErrors.passwordError !== "" ? "border-solid border-1 border-red-700" : ""
-        } border-solid border-1 border-black`}
+          credentialsErrors.passwordError !== "" ? "border-solid border-2 border-black w-40" : ""
+        } border-solid border-1 border-black w-40`}
         emitFunction={inputHandler}
         errorCheck={errorCheck}
       /> <br />
