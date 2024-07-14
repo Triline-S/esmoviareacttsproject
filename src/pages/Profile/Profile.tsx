@@ -5,6 +5,7 @@ import { myContext } from "../../app/context";
 //import { bringMovies, fetchMoviesById } from "../../services/api-calls";
 import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { FavMovie } from "../../interfaces";
 //import { Movie } from "../../interfaces";
 
 
@@ -25,6 +26,7 @@ function Profile () {
           //I will decipher the token....
           let decoded = jwtDecode(state.global.token)
           console.log(decoded);
+          console.log(state.global.favorites);
     
           setDecodedName(decoded?.firstName);
           setFavorites(state.global.favorites);
@@ -45,12 +47,12 @@ function Profile () {
         </h1>
         {favorites.length > 0 ? (
             <Container>
-                {favorites.map((fav: string, index: number) => {
+                {favorites.map((fav: FavMovie, index: number) => {
                     console.log("Movie where?");
                   return (
                     <Row key={index}>
                       <div /*onClick={() => selectMovie(fav)}*/>
-                        {fav}
+                        {fav.addedBy === decodedName ? (fav.movie):("")}
                       </div>
                     </Row>
                   );
