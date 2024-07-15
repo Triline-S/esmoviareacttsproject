@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Movie Browser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The site allows the user to browse movies and add them to favorites.
+It utilizes TMDB's API and should be self-hosted.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Get a free API Key at [TMDB](https://api.themoviedb.org)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/Triline-S/esmoviareacttsproject.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `api-calls.ts`
+   ```js
+   const movie_api_key = 'ENTER YOUR API';
+   ```
+5. Run the project
+  ```sh
+  npm run dev
+  ```
+
+## Usage
+
+ - Home
+ Here you can find movies, and search for them with the search bar in the navbar.
+ - Login
+ Login to the site here.
+ - Account (Name)
+ List of your favorites will be saved here.
+
+## Contact
+
+Bartosz Sech - [@Triline_S](https://twitter.com/Triline_S) - trilinemail@gmail.com
+
+Project Link: [https://github.com/Triline_S/esmoviareacttsproject](https://github.com/Triline_S/esmoviareacttsproject)
