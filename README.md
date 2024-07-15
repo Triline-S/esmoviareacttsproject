@@ -38,12 +38,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
 
- - Home
- Here you can find movies, and search for them with the search bar in the navbar.
- - Login
- Login to the site here.
- - Account (Name)
- List of your favorites will be saved here.
+ - Home - here you can find movies, and search for them with the search bar in the navbar.
+ - Login - login to the site here.
+ - Account (Name) - list of your favorites will be saved here.
 
 ## Contact
 
