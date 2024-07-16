@@ -42,6 +42,8 @@ To get a local copy up and running follow these simple example steps.
  - Login - login to the site here.
  - Account (Name) - list of your favorites will be saved here.
 
+  To log in, use data from (DummyJSON)[https://dummyjson.com], for example `emilys` and `emilyspass`.
+
 ## Contact
 
 Bartosz Sech - [@Triline_S](https://twitter.com/Triline_S) - trilinemail@gmail.com
